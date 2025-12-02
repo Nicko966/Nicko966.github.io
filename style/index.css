@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #f5f7fa;
+    color: #1a1a2e;
+
+}
+
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between; /* Logo stÃ¢nga, meniu dreapta */
+    align-items: center;
+    padding: 15px 30px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #e0e3e7;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu{
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+}
+
+.menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  
+
+.menu a:hover{
+    color: #3A86FF;
+    transition: 0.3s ease;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    vertical-align: center;
+}
+/* BUTON HAMBURGER (MOBILE) */
+
+.menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+#acasa{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    background-attachment: fixed;
+
+/*Imagine + overlay */
+background:
+linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), /* overlay */
+url('./media/website.jpg') center center / cover no-repeat; /* imagine */
+color: #fff;
+
+}
+
+#acasa h1, #acasa p{
+    text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+  }
+
+.content-acasa{
+    margin: 0 auto;
+    max-width: 700px;
+
+}
+.content-acasa h1{
+    font-size: 58px;
+    font-weight: 700;
+    letter-spacing: -1.2px;
+    color: white;
+    margin-bottom: 35px;
+}
+.content-acasa p{
+    font-size: 18px;
+    color: white;
+    opacity: 0.9;
+    margin-bottom: 35px;
+
+}
+
+.buton-cta{
+    background-color: #3A86FF;
+    padding: 16px 32px;
+    border-radius: 100px;
+    display: inline-block;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+.buton-cta:hover{
+    background-color: #2C5FCC;
+    transform: translateY(-4px);
+    transition: 0.3s ease;
+}
+
+#despre{
+    padding: 80px 20px;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.despre-imagine img{
+   border-radius: 14px;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+   width: 100%;
+   height: 550px;
+   object-fit: cover;
+
+}
+
+.despre-text p{
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #1a1a2e;
+}
+
+.despre-text h2{
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.valori li{
+    font-size: 1rem;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.valori li::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #3A86FF; /* cerc albastru */
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.valori li:hover{
+    color: #3A86FF;
+    cursor: pointer;
+}
+
+.grid-servicii{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 30px;
+    padding: 20px 20px;
+}
+
+.card{
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    background: linear-gradient(135deg, #dfe4ea, #c7d0dd);
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#servicii h2{
+    text-align: center;
+}
+
+.card:hover{
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    background: #EAF0FF;
+}
+
+#portofoliu h2{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.intro{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: medium;
+}
+
+.grid-galerie{
+    display: grid;
+    gap: 60px;
+    grid-template-columns: 1fr 1fr;
+
+
+}
+
+.card-img{
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+.card-img img{
+    border-radius: 12px;
+    width: 100%;
+    
+}
+
+.card-img h3{
+    text-align: center;
+}
+
+.card-img:hover {
+    transform: scale(1.08);
+  }
+  
+  .grid-testimoniale {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 20px 20px;
+}
+
+  .card-testimoniale{
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+ 
+
+  
+ 
+  .title-test{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+
+  }
+
+  .card-testimoniale img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+
+  .name-test{
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 1.1rem;
+  }
+
+  .text-test{
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.4;
+    font-style: italic;
+
+  }
+
+  footer{
+    background-color: #111827;
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 30px 0;
+
+}
+
+.date-contact a{
+    color: white;
+    line-height: 1.6;
+
+
+}
+
+.date-contact a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .grid-container,
+    .grid-servicii,
+    .grid-galerie,
+    .grid-testimoniale{
+        grid-template-columns: 1fr;
+    }
+
+    .despre-imagine img{
+        height: auto;
+    }
+
+    .content-acasa h1{
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header{
+        padding: 10px 16px;
+    }
+
+    .menu{
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #f5f5f5;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 10px 0;
+        display: none;
+    }
+
+    .menu a{
+        margin: 10px 0;
+    }
+
+    .menu.open{
+        display: flex;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .logo h1{
+        font-size: 20px;
+    }
+
+    #acasa{
+        padding: 0 15px;
+    }
+
+    .content-acasa h1{
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px){
+    .content-acasa p{
+        font-size: 16px;
+    }
+}
+
+
