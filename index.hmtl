@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="./style/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+        <title>Aurora Creative Studio</title>
+    </head>
+    <body>
+    <header>
+        <div class="logo"><h1>Aurora Creative Studio</h1></div>
+        <nav class="menu">
+                <a href="#acasa">Acasa</a>
+                <a href="#despre">Despre</a>
+                <a href="#servicii">Servicii</a>
+                <a href="#portofoliu">Portofoliu</a>
+                <a href="#testimoniale">Testimoniale</a>
+                <a href="#contact">Contact</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Deschide meniul">
+          <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <main>
+        <section id="acasa">
+            <div class="content-acasa">
+              <h1>Design inteligent pentru branduri cu viziune</h1>
+              <p>La Aurora Creative Studio creăm site-uri rapide, estetice și orientate spre conversie. Înțelegem că fiecare business este diferit, așa că dezvoltăm soluții personalizate, gândite să crească vizibilitatea, credibilitatea și rezultatele tale în online. Creativitate, strategie și execuție impecabilă — toate într-un singur loc.</p>
+              <a href="#servicii" class="buton-cta">Servicii</a>
+            </div>
+          </section>
+
+        <section id="despre">
+            <div class="grid-container">
+
+              <div class="despre-text">
+              <h2>Despre Noi</h2>
+              <p class="">Aurora Creative este un studio de design digital unde creativitatea întâlnește strategia.
+                Ne dedicăm construirii de identități vizuale și experiențe online care lasă o impresie memorabilă.</p>
+              <p>Punem accent pe claritate, utilitate și estetică.
+                Fiecare proiect este abordat cu profesionalism, comunicare constantă și atenție la detalii.</p>
+    
+               <ul class="valori">
+                <li>Inovație și calitate</li>
+                <li>Comunicare transparentă</li>
+                <li>Profesionalism și creativitate</li>
+                <li>Orientare spre rezultate</li>
+               </ul>
+             </div>
+
+            <div class="despre-imagine">
+              <img src="./style/media/coders.jpg" alt="Echipa noastra"/>
+            </div>
+        </div>
+
+        </section>
+         
+        <section id="servicii">
+            <h2>Serviciile Noastre</h2>
+          <div class="grid-servicii">
+            <div class="card">
+              <h2>Web Design</h2>
+              <p>Creăm site-uri moderne, rapide și optimizate care pun brandul în valoare</p>
+            </div>
+            <div class="card">
+              <h2>Branding</h2>
+              <p>Construim identități vizuale coerente, elegante și memorabile.</p>
+            </div>
+            <div class="card">
+              <h2>Logo Design</h2>
+              <p>Logo-uri personalizate, minimaliste și adaptate fiecărui tip de afacere.</p>
+            </div>
+            <div class="card">
+              <h2>Social media</h2>
+              <p>Dezvoltăm strategii vizuale care întăresc prezența brandului online.</p>
+            </div>
+            <div class="card">
+              <h2>UI/UX Design</h2>
+              <p>Interfețe intuitive și experiențe fluide pentru site-uri și aplicații.</p>
+            </div>
+
+          </div>
+        </section>
+        <section id="portofoliu">
+          <h2>Portofoliu</h2>
+          <p class="intro">Proiecte realizate cu pasiune, atenție la detalii și o înțelegere profundă a nevoilor clienților</p>
+          <div class="grid-galerie">
+            <div class="card-img">
+              <h3>Web Design – Brand A</h3>
+              <img src="./style/media/portofoliu1.jpg" alt="portofoliu">
+          </div>
+          <div class="card-img">
+            <h3>Branding – Client X</h3>
+              <img src="./style/media/portofoliu2.jpg" alt="portofoliu">
+          </div>
+          <div class="card-img">
+            <h3>Logo Design - Business Y</h3>
+              <img src="./style/media/portofoliu3.jpg" alt="portofoliu">
+          </div>
+          <div class="card-img">
+            <h3>UI/UX - App Z</h3>
+              <img src="./style/media/portofoliu4.png" alt="portofoliu">
+          </div>
+          <div class="card-img">
+            <h3>Landing Page - Start-up Nova</h3>
+              <img src="./style/media/portofoliu5.jpg" alt="portofoliu">
+          </div>
+        
+      
+          </div>
+
+        </section>
+        <section id="testimoniale">
+          <div class="container-testimoniale">
+            <h2 class="title-test">Ce Spun Clientii</h2>
+          <div class="grid-testimoniale">
+            <div class="card-testimoniale">
+              <img src="./style/media/andrei.jpg" alt="andrei">
+              <h3 class="name-test">Andrei Popescu</h3>
+              <p class="text-test">„O echipă extraordinară. Au înțeles perfect viziunea mea și au livrat un site impecabil.”</p>
+          
+            
+            </div>
+            <div class="card-testimoniale">
+              <img src="./style/media/jhon.jpg" alt="jhon">
+              <h3 class="name-test">Jhon Smyth</h3>
+              <p class="text-test">„Profesioniști, rapizi și foarte creativi. Branding-ul meu arată acum exact cum mi-am dorit.”</p>
+              
+            </div>
+            <div class="card-testimoniale">
+              <img src="./style/media/martha.jpg" alt="martha">
+              <h3 class="name-test">Martha Winston</h3>
+              <p class="text-test">„Colaborarea a fost excelentă. Recomand cu toată încrederea Aurora Creative Studio.”</p>
+            
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <section id="contact">
+        <div class="container-contact">
+          <div class="date-contact">
+              <h3>Aurora Creative Studio</h3>
+              <p>Adresa: 1 The Park Cluain Adain, Navan, Co. Meath</p>
+              <p>Telefon:<a href="tel: +353857668962">+353857668962</a></p>
+              <p>Email:<a href="mailto:contact@barebeauty.ie">contact@auroracreativestudio.ie</a></p>
+          </div>
+        </div>
+        </section>
+      </footer>
+      <script>
+        document.getElementById("menuToggle").addEventListener("click", function() {
+            document.querySelector(".menu").classList.toggle("open");
+        });
+        </script>
+        
+    </body>
+
+
+
+  
+
+</html>
